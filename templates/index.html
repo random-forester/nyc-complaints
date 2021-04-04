@@ -7,7 +7,7 @@
     <meta name="author" content="@gotoariel">
     <!-- <link rel="icon" href="favicon.ico"> -->
 
-    <title>wallstreetbets loves this</title>
+    <title>wallstreetbets picker</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -19,16 +19,22 @@
           <h2>Who's stock are you trying to short?</h2>
           <form id="who" method="post" action="/">
             <p>
-          Ticker Symbol: <input type="text" name="symbull">
+              Ticker Symbol: <input type="text" name="symbull">
+            </p>
+            <p>
+              <input type="checkbox" name="option_open" value="open">
+              <label for="option_open"> Opening price</label><br>
+              <input type="checkbox" name="option_high" value="high">
+              <label for="option_high"> High price</label><br>
+              <input type="checkbox" name="option_low" value="low">
+              <label for="option_low"> Low price</label><br>
+              <input type="checkbox" name="option_close" value="close">
+              <label for="option_close"> Closing price</label><br>
+              <input type="checkbox" name="option_adjclose" value="adjclose">
+              <label for="option_adjclose"> Adjusted closing price</label><br>
+              <input type="submit" value="Submit">
             </p>
           </form>
-          <ul>
-            <li><a href="/about">About</a></li>
-            <li><a target="_blank" href="https://www.heroku.com/">Heroku</a></li>
-            <li><a target="_blank" href="http://flask.pocoo.org/">Flask</a></li>
-            <li><a target="_blank" href="http://jinja.pocoo.org/">Jinja2</a></li>
-            <li><a target="_blank" href="http://getbootstrap.com/">Bootstrap</a></li>
-          </ul>
         </div>
       </div>
     </div>
