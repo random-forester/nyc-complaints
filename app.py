@@ -7,18 +7,24 @@ from bokeh.plotting import figure, output_file, show
 from bokeh.models import CheckboxGroup
 from bokeh.plotting import figure
 from bokeh.embed import components
-#from bokeh import required functions
-app = Flask(__name__)
 
-@app.route('/')
+#create form and button classes
+app = Flask(__name__)
+app.vars = {}
+
+@app.route('/', methods = ["GET", "POST"])
 def index():
-  return render_template('index.html')
+	if request.method == 'GET':
+		return render_template('index.html')
+	else:
+		#request was a post
+		return ticker(request.form["symbull"])
 
 @app.route('/about')
 def about():
   return render_template('about.html')
 
-@app.route('/ticker/<string:symb>')
+@app.route('/ticker/<string:symb>', methods = ["GET", "POST"])
 def ticker(symb):
 	#get API
 	query_params = {'function': 'TIME_SERIES_DAILY_ADJUSTED', 'symbol': symb, 'outputsize': "compact",'apikey':'GIPEBXGZOPJLSY3H'}
@@ -47,7 +53,7 @@ def ticker(symb):
 	script, div = components(p)
 	return render_template("ticker.html", symbol=symb, the_div=div, the_script=script)
 
-	# get bokeh result for symbol
+	# get bokeh result for symb
 	# insert bokeh result into html generating function
 
 if __name__ == '__main__':
