@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="An application using Heroku and Flask integration.">
+    <meta name="author" content="@gotoariel">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <!-- <link rel="icon" href="favicon.ico"> -->
+
+    <title>wallstreetbets picker</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-left">
+          <h2>Who's stock are you trying to short?</h2>
+          <form id="who" method="post" action="/">
+            <p>
+              Ticker Symbol: <input type="text" name="symbull">
+            </p>
+            <p>
+              <input type="checkbox" name="option_open" value="open">
+              <label for="option_open"> Opening price</label><br>
+              <input type="checkbox" name="option_high" value="high">
+              <label for="option_high"> High price</label><br>
+              <input type="checkbox" name="option_low" value="low">
+              <label for="option_low"> Low price</label><br>
+              <input type="checkbox" name="option_close" value="close">
+              <label for="option_close"> Closing price</label><br>
+              <input type="checkbox" name="option_adjclose" value="adjclose">
+              <label for="option_adjclose"> Adjusted closing price</label><br>
+              <input type="submit" value="Submit">
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

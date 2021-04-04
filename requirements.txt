@@ -1,0 +1,6 @@
+flask==1.1.2
+gunicorn==20.0.4
+requests==2.25.1
+pandas
+simplejson==3.17.2
+bokeh==2.3.0
