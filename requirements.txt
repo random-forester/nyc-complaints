@@ -6,6 +6,6 @@ simplejson==3.17.2
 bokeh==2.3.0
 altair==4.10
 panel==0.11.3
-dill=0.3.3
+dill==0.3.3
 voila==0.2.10
 
