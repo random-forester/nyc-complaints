@@ -70,7 +70,7 @@ def ticker(symb, options=['open','high','low','close','adjclose']):
 	p.legend.location = "top_left"
 	#show(p)
 	script, div = components(p)
-	return render_template("ticker.html", symbol=symb, the_div=div, the_script=script)
+	return render_template("preidctions.html", symbol=symb, the_div=div, the_script=script)
 
 	# get bokeh result for symb
 	# insert bokeh result into html generating function
