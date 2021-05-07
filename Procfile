@@ -1,1 +1,1 @@
-web: voila —-port=$PORT --enable_nbextensions=True —-no-browser WAYGCCA_Voila.ipynb
+web: voila —-port=$PORT --no-browser --enable_nbextensions=True WAYGCCA_Voila.ipynb
