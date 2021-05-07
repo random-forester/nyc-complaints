@@ -1,1 +1,1 @@
-web: gunicorn app:app
+web: voila —-port=$PORT —-no-browser WAYGCCA_Voila.ipynb
