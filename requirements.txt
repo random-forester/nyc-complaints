@@ -7,5 +7,6 @@ bokeh==2.3.0
 altair
 panel==0.11.3
 dill==0.3.3
-voila
+jupyter
+
 
