@@ -1,1 +1,1 @@
-web: voila --port=$PORT --no-browser --enable_nbextensions=True WAYGCA_Voila.ipynb
+web: panel serve --address="0.0.0.0" --port=$PORT WAYGCA.ipynb --allow-websocket-origin=app-name.herokuapp.com
